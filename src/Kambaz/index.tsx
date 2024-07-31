@@ -1,8 +1,8 @@
 import Dashboard from "./Dashboard";
-import KanbasNavigation from "./Navigation";
+import KambazNavigation from "./Navigation";
 import { Routes, Route, Navigate } from "react-router";
 import Courses from "../Courses";
-import Account from "../Kanbas/Account/";
+import Account from "./Account";
 import Calender from "../Calender";
 import Inbox from "../Inbox";
 import { useState, useEffect } from "react";
@@ -10,7 +10,7 @@ import store from "./store";
 import { Provider } from "react-redux";
 import * as client from "../Courses/client";
 import ProtectedRoute from "./ProtectedRoute";
-export default function Kanbas() {
+export default function Kambaz() {
   const [courses, setCourses] = useState<any[]>([]);
   const fetchCourses = async () => {
     const courses = await client.fetchAllCourses();
@@ -52,10 +52,10 @@ export default function Kanbas() {
 
   return (
     <Provider store={store}>
-      <div id="wd-kanbas" className="h-100">
+      <div id="wd-kambaz" className="h-100">
         <div className="d-flex h-100">
           <div className="d-none d-md-block bg-black">
-            <KanbasNavigation />
+            <KambazNavigation />
           </div>
           <div className="flex-fill p-4">
             <Routes>

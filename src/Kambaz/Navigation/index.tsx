@@ -4,19 +4,19 @@ import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
 import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
 import { IoChevronBackCircle } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
-export default function KanbasNavigation() {
+export default function KambazNavigation() {
   const { pathname } = useLocation();
   const links = [
-    { label: "Dashboard", path: "/Kanbas/Dashboard", icon: AiOutlineDashboard },
-    { label: "Courses",   path: "/Kanbas/Dashboard", icon: LiaBookSolid },
-    { label: "Calendar",  path: "/Kanbas/Calendar",  icon: IoCalendarOutline },
-    { label: "Inbox",     path: "/Kanbas/Inbox",     icon: FaInbox },
+    { label: "Dashboard", path: "/Kambaz/Dashboard", icon: AiOutlineDashboard },
+    { label: "Courses",   path: "/Kambaz/Dashboard", icon: LiaBookSolid },
+    { label: "Calendar",  path: "/Kambaz/Calendar",  icon: IoCalendarOutline },
+    { label: "Inbox",     path: "/Kambaz/Inbox",     icon: FaInbox },
     { label: "Labs",      path: "/Labs",             icon: LiaCogSolid },
   ];
 
     return (
-      <div id="wd-kanbas-navigation" className="list-group rounded-0 d-flex flex-column justify-content-center align-items-center">
-      <Link key="/Kanbas/Account" to="/Kanbas/Account" className={`list-group-item text-center border-0 bg-black
+      <div id="wd-kambaz-navigation" className="list-group rounded-0 d-flex flex-column justify-content-center align-items-center">
+      <Link key="/Kambaz/Account" to="/Kambaz/Account" className={`list-group-item text-center border-0 bg-black
             ${pathname.includes("Account") ? "bg-white text-danger" : "bg-black text-white"}`}>
         <FaRegCircleUser className={`fs-1 ${pathname.includes("Account") ? "text-danger" : "text-white"}`} />
         <br />
@@ -34,4 +34,3 @@ export default function KanbasNavigation() {
       <a id="wd-landing-page" className="list-group-item text-white bg-black text-center border-0" href="/"><IoChevronBackCircle  className="fs-1 text-danger"/><br />Back to landing page</a>
     </div>
   );}
-  

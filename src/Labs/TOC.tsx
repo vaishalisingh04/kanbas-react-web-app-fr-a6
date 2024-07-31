@@ -50,15 +50,15 @@ export default function TOC() {
         </a>
       </li>
       <li className="nav-item">
-        <a id="wd-k" href="#/Kanbas" className="nav-link">
-          Kanbas
+        <a id="wd-k" href="#/Kambaz" className="nav-link">
+          Kambaz
         </a>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a id="wd-k" href="https://github.com/karangoyal03" className="nav-link">
           My GitHub
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }

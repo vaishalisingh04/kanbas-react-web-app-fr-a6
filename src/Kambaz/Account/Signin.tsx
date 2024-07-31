@@ -12,7 +12,7 @@ export default function Signin() {
     try {
       const currentUser = await client.signin(credentials);
       dispatch(setCurrentUser(currentUser));
-      navigate("/Kanbas/Account/Profile");
+      navigate("/Kambaz/Account/Profile");
     } catch (err: any) {
       setError(err.response.data.message);
     }
@@ -49,7 +49,7 @@ export default function Signin() {
         Sign in{" "}
       </button>
       <br />
-      <Link id="wd-signup-link" to="/Kanbas/Account/Signup">
+      <Link id="wd-signup-link" to="/Kambaz/Account/Signup">
         Sign up
       </Link>
     </div>

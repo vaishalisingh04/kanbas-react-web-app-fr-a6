@@ -13,7 +13,7 @@ export default function Signup() {
     try {
         const currentUser =  await client.signup(user);
         dispatch(setCurrentUser(currentUser));
-      navigate("/Kanbas/Account/Profile");
+      navigate("/Kambaz/Account/Profile");
     } catch (err: any) {
       setError(err.response.data.message);
     }
@@ -41,7 +41,7 @@ export default function Signup() {
         Sign up{" "}
       </button>
       <br />
-      <Link to="/Kanbas/Account/Signin" className="wd-signin-link">
+      <Link to="/Kambaz/Account/Signin" className="wd-signin-link">
         Sign in
       </Link>
     </div>

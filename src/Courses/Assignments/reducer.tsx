@@ -1,5 +1,5 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { assignments } from "../../Kanbas/Database";
+import { assignments } from "../../Kambaz/Database";
 import { title } from "process";
 
 const initialState = {

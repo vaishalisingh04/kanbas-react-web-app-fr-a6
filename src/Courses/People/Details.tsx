@@ -22,7 +22,7 @@ export default function PeopleDetails({
     await client.deleteUser(uid);
     setEditing(false);
     fetchUsers();
-    navigate(`/Kanbas/Courses/${cid}/People`);
+    navigate(`/Kambaz/Courses/${cid}/People`);
   };
 
   const fetchUser = async () => {
@@ -51,11 +51,11 @@ export default function PeopleDetails({
     setUser((prev: any) => (prev = updatedUser));
     fetchUsers();
     setEditing(false);
-    navigate(`/Kanbas/Courses/${cid}/People`);
+    navigate(`/Kambaz/Courses/${cid}/People`);
   };
 
   const cancelEdit = () => {
-    navigate(`/Kanbas/Courses/${cid}/People`);
+    navigate(`/Kambaz/Courses/${cid}/People`);
     setEditing(false);
   };
 

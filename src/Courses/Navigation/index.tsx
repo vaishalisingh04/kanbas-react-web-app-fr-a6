@@ -1,6 +1,6 @@
 import { useParams, useLocation } from "react-router";
 import "./index.css";
-import { courses } from "../../Kanbas/Database";
+import { courses } from "../../Kambaz/Database";
 
 export default function CoursesNavigation() {
   const links = [
@@ -23,7 +23,7 @@ export default function CoursesNavigation() {
         <a
           key={link.name}
           id={`wd-course-${link.name.toLowerCase()}-link`}
-          href={`#/Kanbas/Courses/${cid}/${link.path}`}
+          href={`#/Kambaz/Courses/${cid}/${link.path}`}
           className={`list-group-item border border-0 ${pathname.includes(link.path) ? 'active' : 'text-danger'}`}
         >
           {link.name}

@@ -10,16 +10,17 @@ export default function Profile() {
   const fetchProfile = async () => {
     try {
       const account = await client.profile();
+      console.log(account);
       setProfile(account);
     } catch (err: any) {
-      navigate("/Kanbas/Account/Signin");
+      navigate("/Kambaz/Account/Signin");
     }
   };
 
   const signout = async () => {
     await client.signout();
     dispatch(setCurrentUser(null));
-    navigate("/Kanbas/Account/Signin");
+    navigate("/Kambaz/Account/Signin");
   };
 
   useEffect(() => {

@@ -4,7 +4,7 @@ import { TbFileArrowLeft } from "react-icons/tb";
 import { BsSearch } from 'react-icons/bs';
 import { CiFilter } from "react-icons/ci";
 import { useParams } from "react-router-dom";
-import * as db from "../../Kanbas/Database";
+import * as db from "../../Kambaz/Database";
 
 export default function Grades() {
   const { cid } = useParams();

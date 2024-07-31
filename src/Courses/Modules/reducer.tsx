@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { modules } from "../../Kanbas/Database";
+// import { modules } from "../../Kambaz/Database";
 const initialState = {
   modules: [],
 };

@@ -18,7 +18,7 @@ export default function AssignmentEditor() {
   // const { assignments} = useSelector((state: any) => state.assignmentReducer);
   const dispatch = useDispatch();
   const handleCancelClick = () => {
-    navigate(`/Kanbas/Courses/${cid}/Assignments`);
+    navigate(`/Kambaz/Courses/${cid}/Assignments`);
   };
 
   async function getAssignmentsForCourse(cid: String) {
@@ -66,7 +66,7 @@ export default function AssignmentEditor() {
       // dispatch(addAssignment(assignmentData));
     }
 
-    navigate(`/Kanbas/Courses/${cid}/Assignments`);
+    navigate(`/Kambaz/Courses/${cid}/Assignments`);
   };
 
   return (

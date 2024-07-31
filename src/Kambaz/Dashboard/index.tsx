@@ -50,7 +50,7 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
           {courses.map((course) => (
             <div className="wd-dashboard-course col" style={{ width: "300px" }}>
               <Link
-                to={`/Kanbas/Courses/${course.cid}/Home`}
+                to={`/Kambaz/Courses/${course.cid}/Home`}
                 className="text-decoration-none"
               >
                 <div className="card rounded-3 overflow-hidden">
@@ -73,7 +73,7 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
                       {course.description}
                     </p>
                     <Link
-                      to={`/Kanbas/Courses/${course.cid}/Home`}
+                      to={`/Kambaz/Courses/${course.cid}/Home`}
                       className="btn btn-primary"
                     >
                       Go

@@ -4,7 +4,7 @@ import Lab1 from ".//Labs/Lab1";
 import TOC from ".//Labs/TOC";
 import Lab2 from ".//Labs/Lab2";
 import Lab3 from ".//Labs/Lab3";
-import Kanbas from ".//Kanbas";
+import Kambaz from "./Kambaz";
 import Labs from "./Labs";
 import Lab4 from "./Labs/Lab4";
 import LandingPage from "./LandingPage";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/Labs/Lab3" element={<Lab3 />} />
           <Route path="/Labs/Lab4" element={<Lab4 />} /> 
           <Route path="/Labs/Lab5" element={<Lab5 />} /> 
-          <Route path="/Kanbas/*" element={<Kanbas />} />
+          <Route path="/Kambaz/*" element={<Kambaz />} />
         </Routes>
       </div>
       </Provider>

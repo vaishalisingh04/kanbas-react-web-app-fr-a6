@@ -5,7 +5,7 @@ import { IoNewspaperSharp } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import { useParams } from "react-router";
-import * as db from "../../Kanbas/Database";
+import * as db from "../../Kambaz/Database";
 import { useSelector, useDispatch } from "react-redux";
 import * as client from "./client";
 import React, { useState, useEffect } from "react";
@@ -97,7 +97,7 @@ export default function Assignments() {
             <div className="p-3 flex-grow-1">
               <a
                 className="wd-assignment-link"
-                href={`#/Kanbas/Courses/${cid}/Assignments/${assignment?._id}`}
+                href={`#/Kambaz/Courses/${cid}/Assignments/${assignment?._id}`}
               >
                 {assignment && assignment.title}
               </a>
